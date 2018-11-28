@@ -19,3 +19,11 @@ get '/favorites' do
   @fav_links = ["www.theultralinx.com", "www.twitter.com/mrbenjaminhoppe"]
   erb :favorite
 end
+
+get '/' do
+  redirect to('home')
+end
+
+get '/gallery' do
+  redirect to('portfolio')
+end
